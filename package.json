@@ -1,0 +1,34 @@
+{
+	"name": "@taoismcn/front-end-tracking",
+	"version": "1.0.0",
+	"description": "A front-end tracking sdk",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"browser": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "rollup -c",
+		"release": "npm run build && npm version minor && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/f5l5y5/front-end-tracking.git"
+	},
+	"keywords": [
+		"front-end",
+		"sdk",
+		"tracker"
+	],
+	"author": "yinuo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/f5l5y5/front-end-tracking/issues"
+	},
+	"homepage": "https://github.com/f5l5y5/front-end-tracking#readme",
+	"devDependencies": {
+		"rollup": "^2.76.0",
+		"rollup-plugin-dts": "^4.2.2",
+		"rollup-plugin-typescript2": "^0.32.1",
+		"typescript": "^4.7.4"
+	}
+}
