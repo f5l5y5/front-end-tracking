@@ -20,4 +20,4 @@ jobs:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: |
                   npm run build
-                  npm run publish
+                  npm publish
