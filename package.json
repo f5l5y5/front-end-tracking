@@ -1,6 +1,6 @@
 {
 	"name": "@taoismcn/front-end-tracking",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A front-end tracking sdk",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
