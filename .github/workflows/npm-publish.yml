@@ -18,4 +18,7 @@ jobs:
             - name: Release version
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: npm run release
+              run: |
+                  npm run build
+                  npm run ${{${GITHUB_REF/refs\\/tags\\//}}
+                  npm run publish
