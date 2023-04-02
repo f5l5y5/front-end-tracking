@@ -14,8 +14,13 @@ jobs:
                   node-version: '14.x'
             - name: Install dependencies
               run: npm ci
-            - name: Release version
+            - name: Build
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: npm run release
+              run: npm run build
+            - name Tag
+              run: npm version minor
+            - name publish
+              run: npm publish
+          
